@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "platscan"
+version = "0.1.0"
+description = "Platform Scanning Tool"
+authors = ["Obsidian33"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.35.83"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-mock = "^3.14.0"
+
+[tool.poetry.group.cli.dependencies]
+click = "^8.1.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
